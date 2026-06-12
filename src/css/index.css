@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Audiowide&family=Bahiana&family=Lily+Script+One&family=Luckiest+Guy&family=Tilt+Prism&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: 'Outfit', sans-serif;
+}
+header{
+    width: 100%;
+    padding: 1.5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+header .hdr{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .hdr .regard h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+header .hdr .icon_ham button{
+    outline: none;
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+main{
+    position: relative;
+    width: 100%;
+    height: calc(85vh - 10px);
+    overflow-y: scroll;
+    scrollbar-width:thin;
+}
+main .ticket-list .phrase{
+    width: 100%;
+    height: auto;
+}
+main .ticket-list .phrase h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+main .ticket-list{
+    width: 90%;
+    height: auto;
+    margin: 1.5rem auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+main .ticket-list .ticket{
+    width: calc(50% - 10px);
+    border-radius: .625rem;
+    min-height: 250px;
+    height: 280px;
+    max-height: 320px;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(99, 99, 99, 0.1);
+    background-color: #fff;
+    position: relative;
+}
+main .ticket-list .ticket::before{
+    position: absolute;
+    content: "";
+    z-index: 5;
+    top: calc(50% - 5px);
+    left: -20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #f3f3f3;
+}
+main .ticket-list .ticket::after{
+    position: absolute;
+    content: "";
+    z-index: 5;
+    top: calc(50% - 5px);
+    right: -20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #f3f3f3;
+}
+main .ticket-list .ticket .img_tick{
+    width: 100%;
+    background: linear-gradient(180deg, #60F855 0%, #389232 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*code que ayuda a cambiar el color de los tickets*/
+main .ticket-list .ticket.active2 .img_tick{
+    background: linear-gradient(180deg, #000000 0%, #3B0707 100%);
+}
+main .ticket-list .ticket.active3 .img_tick{
+    background: linear-gradient(180deg, #ffffff 0%, #7CDCFF 100%);
+}
+main .ticket-list .ticket.active4 .img_tick{
+    background: linear-gradient(180deg, #F9C90A 0%, #F95050 25%, #9FDF50 50%, #9D6203 75%, #F9C90A 100%);
+}
+main .ticket-list .ticket.active5 .img_tick{
+    background: linear-gradient(180deg, #1D0123 0%, #000 100%);
+}
+main .ticket-list .ticket.active6 .img_tick{
+    background: linear-gradient(180deg, #260102 0%, #000 100%);
+}
+/**/
+
+main .ticket-list .ticket .img_tick img{
+    width: calc(70% - 5px);
+    height: 150px;
+    min-height: 120px;
+    max-height: 170px;
+    vertical-align: top;
+    object-fit: cover;
+    transform: scale(.8);
+    object-position: center;
+}
+main .ticket-list .ticket .desc{
+    width: 80%;
+    margin: 1.25rem auto;
+    position: relative;
+}
+main .ticket-list .ticket .desc::after{
+    content: "Ver Detalles";
+    position: absolute;
+    font-size: .75rem;
+    bottom: 5px;
+    font-weight: 500;
+    right: 0;
+}
+main .ticket-list .ticket .desc h4{
+    font-weight: 600;
+}
+main .ticket-list .ticket .desc .couinf p{
+    margin-top: .25rem;
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 1.5rem;
+}
+main .ticket-list .ticket .desc .couinf p strong{
+    font-size: .75rem;
+    font-weight: 500;
+    padding: .25rem;
+    color: #fff;
+    border-radius: 1rem;
+    background-color: #02bd49;
+}
+footer{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+footer .tab_nav{
+    width: 90%;
+    background-color: #ffffff30;
+    border: 1px solid #dfdfdf;
+    border-radius: 2.5rem;
+    margin: auto;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: .5rem 0;
+}
+footer .tab_nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .tab_nav ul li a{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    background-color: transparent;
+    transition: .3s ease all;
+    padding: .5rem 1.75rem;
+    border-radius: 2rem;
+    color: #000;
+    flex-direction: column;
+}
+footer .tab_nav ul li a:hover,
+footer .tab_nav ul li a.active{
+    background-color: #f8e0e0a3;
+}
+footer .tab_nav ul li a i{
+    font-size: 1.625rem;
+}
+footer .tab_nav ul li a span{
+    font-size: .75rem;
+}
+
+/*overlay apart*/
+.overlay_modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: calc(100% + 20px);
+    transition: .4s ease all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 25;
+}
+.overlay_modal .modal{
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/*super personalización de tickets*/
+.overlay_modal .modal .item{
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: -30px;
+}
+.overlay_modal .modal .item img{
+    width: calc(50% - 20px);
+    object-fit: cover;
+    object-position: center;
+    vertical-align: top;
+}
+.overlay_modal .modal .item img:nth-child(1){
+    transform: rotate(200deg) scale(1.2);
+}
+.overlay_modal .modal .item img:nth-child(2){
+    transform: rotate(115deg) scale(1.2);
+}
+
+/*fin de sección super personzalible de tickets*/
+.overlay_modal .modal .tickt_modal{
+    width: 90%;
+    height: 90%;
+    position: relative;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: auto auto;
+    overflow: hidden;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay_modal .modal .tickt_modal::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(99, 99, 99, 0.3);
+    top: calc(50% + 20px);
+    left: -20px;
+    z-index: 50;
+}
+.overlay_modal .modal .tickt_modal::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(99, 99, 99, 0.3);
+    top: calc(50% + 20px);
+    right: -20px;
+    z-index: 50;
+}
+.overlay_modal .modal .tickt_modal .imgT{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 3rem;
+    height: calc(33% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overlay_modal .modal .tickt_modal .imgT img{
+    width: 100%;
+    transform: scale(.8);
+    object-position: center;
+    object-fit: cover;
+    opacity: 0;
+    display: none;
+    vertical-align: top;
+}
+.overlay_modal .modal .tickt_modal .imgT h1{
+    width: 100%;
+    font-weight: 500;
+    font-size: 3rem;
+    text-shadow: 0 4px 5px #02bd49;
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
+}
+/*changing texttest and image for movies*/
+.overlay_modal.active2 .modal .tickt_modal .imgT img{
+    display: block;
+}
+
+.overlay_modal.active2 .modal .tickt_modal .imgT h1{
+    position: absolute;
+    top: calc(50% - 22px);
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    letter-spacing: 2px;
+    text-shadow: none;
+}
+
+/*end change texttest styles*/
+.overlay_modal .modal .tickt_modal .tInfo{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    height: calc(33% - 10px);
+}
+.overlay_modal .modal .tickt_modal .tInfo .dataC{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.overlay_modal .modal .tickt_modal .tInfo .dataC p{
+    margin-bottom: 1rem;
+    font-size: .875rem;
+    text-align: justify;
+}
+.overlay_modal .modal .tickt_modal .tInfo .dataC .splitData{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.overlay_modal .modal .tickt_modal .tInfo .dataC .splitData p{
+    min-width: 50%;
+    display: block;
+    font-size: .875rem;
+    text-align: left;
+    line-height: 1.125rem;
+}
+.overlay_modal .modal .tickt_modal .btlnks{
+    width: 100%;
+    height: calc(33% - 10px);
+    display: flex;
+    padding-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.overlay_modal .modal .tickt_modal .btlnks button,
+.overlay_modal .modal .tickt_modal .btlnks button a{
+    height: auto;
+    padding: .5rem;    
+    outline: none;
+    background-color: #02bd49;
+    border: none;
+    border-radius: 30px;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*comienza clase active para el overlay y cambios dinamicos de colores*/
+.overlay_modal.active1,
+.overlay_modal.active2,
+.overlay_modal.active3,
+.overlay_modal.active4,
+.overlay_modal.active5,
+.overlay_modal.active6
+{
+    top: 0;
+    opacity: 1;
+}
+.overlay_modal.active1{
+    background: linear-gradient(180deg, #60F855 0%, #389232 100%);
+}
+.overlay_modal.active2{
+    background: linear-gradient(180deg, #000000 0%, #3B0707 100%);
+}
+.overlay_modal.active3{
+    background: linear-gradient(180deg, #ffffff 0%, #7CDCFF 100%);
+}
+.overlay_modal.active4{
+    background: linear-gradient(180deg, #F9C90A 0%, #F95050 25%, #9FDF50 50%, #9D6203 75%, #F9C90A 100%);
+}
+.overlay_modal.active5{
+    background: linear-gradient(180deg, #1D0123 0%, #000 100%);
+}
+.overlay_modal.active6{
+    background: linear-gradient(180deg, #260102 0%, #000 100%);
+}
+.overlay_modal.active1 .modal .tickt_modal::after,
+.overlay_modal.active1 .modal .tickt_modal::before{
+    background: #49BF41;
+}
+
+.overlay_modal.active2 .modal .tickt_modal::after,
+.overlay_modal.active2 .modal .tickt_modal::before{
+    background: #230405;
+}
+.overlay_modal.active3 .modal .tickt_modal::after,
+.overlay_modal.active3 .modal .tickt_modal::before{
+    background: #B8ECFF;
+}
+.overlay_modal.active4 .modal .tickt_modal::after,
+.overlay_modal.active4 .modal .tickt_modal::before{
+    background: #9ECC44;
+}
+.overlay_modal.active5 .modal .tickt_modal::after,
+.overlay_modal.active5 .modal .tickt_modal::before{
+    background: #09000B;
+}
+.overlay_modal.active6 .modal .tickt_modal::after,
+.overlay_modal.active6 .modal .tickt_modal::before{
+    background: #0B0100;
+}
+.overlay_modal.active1 .modal .tickt_modal{
+    background-color: #dce611;
+}
+.overlay_modal.active2 .modal .tickt_modal{
+    background-color: #ffffff99;
+}
+.overlay_modal.active3 .modal .tickt_modal{
+    background-color: #ffffff99;
+    backdrop-filter: blur(5px);
+    border: 1px solid #ddd;
+}
+.overlay_modal.active2 .modal .tickt_modal .btlnks button,
+.overlay_modal.active2 .modal .tickt_modal .btlnks button a{
+    background-color: #3B0707;
+    color: #fff;
+}
+.overlay_modal.active3 .modal .tickt_modal .btlnks button,
+.overlay_modal.active3 .modal .tickt_modal .btlnks button a{
+    background-color: #7CDCFF;
+    color: #fff;
+}
+.overlay_modal.active4 .modal .tickt_modal .btlnks button,
+.overlay_modal.active4 .modal .tickt_modal .btlnks button a{
+    background-color: #F95050;
+    color: #fff;
+}
+.overlay_modal.active5 .modal .tickt_modal .btlnks button,
+.overlay_modal.active5 .modal .tickt_modal .btlnks button a{
+    background-color: #1D0123;
+    color: #fff;
+}
+.overlay_modal.active6 .modal .tickt_modal .btlnks button,
+.overlay_modal.active6 .modal .tickt_modal .btlnks button a{
+    background-color: #000;
+    color: #fff;
+}
+
+/**/
