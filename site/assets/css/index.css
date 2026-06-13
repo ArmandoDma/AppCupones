@@ -237,7 +237,6 @@ footer .tab_nav ul li a span{
 .overlay_modal .modal .item{
     width: 100%;
     position: absolute;
-    z-index: 50;
     gap: 20px;
     display: flex;
     align-items: center;
@@ -248,6 +247,7 @@ footer .tab_nav ul li a span{
 .overlay_modal .modal .item img{
     width: calc(50% - 20px);
     object-fit: cover;
+    z-index: 50;
     object-position: center;
     vertical-align: top;
 }
@@ -256,6 +256,69 @@ footer .tab_nav ul li a span{
 }
 .overlay_modal .modal .item img:nth-child(2){
     transform: rotate(115deg) scale(1.2);
+}
+.overlay_modal .modal .item:nth-child(2),
+.overlay_modal .modal .item:nth-child(3),
+.overlay_modal .modal .item:nth-child(4),
+.overlay_modal .modal .item:nth-child(5),
+.overlay_modal .modal .item:nth-child(6){
+    display: none;
+}
+.overlay_modal.active2 .modal .item:nth-child(1),
+.overlay_modal.active2 .modal .item:nth-child(1){
+    display: none;
+}
+.overlay_modal .modal .item:nth-child(2){
+    display: flex;
+}
+.overlay_modal.active2 .modal .item:nth-child(2) img:nth-child(1){
+    position: relative;
+    right: 120px;
+    transform: rotate(180deg) scale(1.1);
+    z-index: 10;
+}
+
+/**/
+.overlay_modal .modal .itemdw{
+    width: 100%;
+    position: absolute;
+    z-index: 50;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    bottom: -30px;
+}
+.overlay_modal .modal .itemdw img{
+    width: calc(50% - 20px);
+    object-fit: cover;
+    position: relative;
+    object-position: center;
+    vertical-align: top;
+}
+.overlay_modal .modal .itemdw img:nth-child(1){
+    transform: rotate(45deg) scale(1.2);
+    left: -50px;
+}
+.overlay_modal .modal .itemdw img:nth-child(2){
+    transform: rotate(-45deg) scale(1.2);
+    right: -50px;
+}
+.overlay_modal .modal .itemdw:nth-child(5) img:nth-child(1){
+    display: none;
+}
+.overlay_modal.active2 .modal .itemdw:nth-child(4) img:nth-child(1),
+.overlay_modal.active2 .modal .itemdw:nth-child(4) img:nth-child(2){
+    display: none;
+}
+.overlay_modal.active2 .modal .itemdw:nth-child(5) img:nth-child(1){
+    width: calc(70% - 20px);
+    transform: scale(1.2) rotate(0deg);
+    position: relative;
+    left: 100px;
+    display: block;
+    bottom: 25px;
 }
 
 /*fin de sección super personzalible de tickets*/

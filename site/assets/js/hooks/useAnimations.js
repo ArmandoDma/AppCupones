@@ -81,9 +81,23 @@ export async function useAnimations() {
                 texttest.style.fontFamily = 'Tilt Prism'
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
-                    let titulo = tkt.titulo.toLowerCase();
+                    let titulo = tkt.titulo.toLowerCase();  
+                    texttest.innerText = titulo;            
+                    const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("teporochos")) {
+                        tInfo.innerHTML =
+                            `
+                            <div class='dataC'>
+                                <p>Organizador: <br>${tkt.organizador}</p>
+                                <p>Invitada Especial: <br> ${invitado}</p>
+                                <div class='splitData'>
+                                    <p>Lugar:  <br> ${tkt.lugar}</p>
+                                    <p>Vigencia:  <br> ${tkt.fecha_exp}</p>  
+                                </div>
+                                <p>Descripción:  <br> ${tkt.descripcion}</p>  
+                            </div>
+                        `
                         btnlnk.innerHTML =
                             `
                             <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero guapo, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
@@ -96,8 +110,22 @@ export async function useAnimations() {
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
                     let titulo = tkt.titulo.toLowerCase();
+                    texttest.innerText = titulo;                    
+                    const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("unas")) {
+                        tInfo.innerHTML =
+                            `
+                            <div class='dataC'>
+                                <p>Organizador: <br>${tkt.organizador}</p>
+                                <p>Invitada Especial: <br> ${invitado}</p>
+                                <div class='splitData'>
+                                    <p>Lugar:  <br> ${tkt.lugar}</p>
+                                    <p>Vigencia:  <br> ${tkt.fecha_exp}</p>  
+                                </div>
+                                <p>Descripción:  <br> ${tkt.descripcion}</p>  
+                            </div>
+                        `
                         btnlnk.innerHTML =
                             `
                             <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero guapo, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
@@ -110,8 +138,22 @@ export async function useAnimations() {
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
                     let titulo = tkt.titulo.toLowerCase();
+                    texttest.innerText = titulo;                    
+                    const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("back")) {
+                        tInfo.innerHTML =
+                            `
+                            <div class='dataC'>
+                                <p>Organizador: <br>${tkt.organizador}</p>
+                                <p>Invitada Especial: <br> ${invitado}</p>
+                                <div class='splitData'>
+                                    <p>Lugar:  <br> ${tkt.lugar}</p>
+                                    <p>Vigencia:  <br> ${tkt.fecha_exp}</p>  
+                                </div>
+                                <p>Descripción:  <br> ${tkt.descripcion}</p>  
+                            </div>
+                        `
                         btnlnk.innerHTML =
                             `
                             <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero guapo, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
@@ -124,8 +166,22 @@ export async function useAnimations() {
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
                     let titulo = tkt.titulo.toLowerCase();
+                    texttest.innerText = titulo;                    
+                    const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("velada")) {
+                        tInfo.innerHTML =
+                            `
+                            <div class='dataC'>
+                                <p>Organizador: <br>${tkt.organizador}</p>
+                                <p>Invitada Especial: <br> ${invitado}</p>
+                                <div class='splitData'>
+                                    <p>Lugar:  <br> ${tkt.lugar}</p>
+                                    <p>Vigencia:  <br> ${tkt.fecha_exp}</p>  
+                                </div>
+                                <p>Descripción:  <br> ${tkt.descripcion}</p>  
+                            </div>
+                        `
                         btnlnk.innerHTML =
                             `
                             <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero guapo, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
