@@ -170,6 +170,10 @@ export async function useAnimations() {
                     const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("velada")) {
+                        
+                        imgBck.style.opacity = 1
+                        imgBck.src = tkt.image;
+                        
                         tInfo.innerHTML =
                             `
                             <div class='dataC'>
