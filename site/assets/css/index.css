@@ -675,7 +675,7 @@ footer .tab_nav ul li a span {
     width: 100%;
     height: calc(33% - 10px);
     display: flex;
-    padding-top: 5rem;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
@@ -683,13 +683,15 @@ footer .tab_nav ul li a span {
 .overlay_modal .modal .tickt_modal .btlnks button,
 .overlay_modal .modal .tickt_modal .btlnks button a {
     height: auto;
-    padding: .5rem;
+    padding: .5rem 3rem;
     outline: none;
     background-color: #02bd49;
     border: none;
     border-radius: 30px;
+    position: absolute;
     font-weight: 400;
     font-family: inherit;
+    top: calc(50% - 10px);
     display: inline-flex;
     align-items: center;
     justify-content: center;

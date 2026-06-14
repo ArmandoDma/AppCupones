@@ -173,7 +173,7 @@ export async function useAnimations() {
                         
                         imgBck.style.opacity = 1
                         imgBck.src = tkt.image;
-                        
+
                         tInfo.innerHTML =
                             `
                             <div class='dataC'>
