@@ -3,6 +3,8 @@
 
 html{
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 *{
     padding: 0;
@@ -268,10 +270,63 @@ footer .tab_nav ul li a span{
 .overlay_modal.active2 .modal .item:nth-child(1){
     display: none;
 }
-.overlay_modal .modal .item:nth-child(2){
+.overlay_modal.active2 .modal .item:nth-child(2){
     display: flex;
 }
 .overlay_modal.active2 .modal .item:nth-child(2) img:nth-child(1){
+    position: relative;
+    right: 120px;
+    transform: rotate(180deg) scale(1.1);
+    z-index: 10;
+}
+
+.overlay_modal.active3 .modal .item:nth-child(1),
+.overlay_modal.active3 .modal .item:nth-child(1){
+    display: none;
+}
+.overlay_modal.active3 .modal .item:nth-child(3){
+    display: flex;
+}
+.overlay_modal.active3 .modal .item:nth-child(3) img:nth-child(1){
+    position: relative;
+    right: -100px;
+    transform: rotate(10deg);
+    z-index: 10;
+}
+.overlay_modal.active4 .modal .item:nth-child(1),
+.overlay_modal.active4 .modal .item:nth-child(1){
+    display: none;
+}
+.overlay_modal.active4 .modal .item:nth-child(4){
+    display: flex;
+}
+.overlay_modal.active4 .modal .item:nth-child(4) img:nth-child(1){
+    position: relative;
+    right: 30px;
+    transform: rotate(180deg) scale(1.1);
+    z-index: 10;
+}
+.overlay_modal.active5 .modal .item:nth-child(1),
+.overlay_modal.active5 .modal .item:nth-child(1){
+    display: none;
+}
+.overlay_modal.active5 .modal .item:nth-child(5){
+    display: flex;
+}
+.overlay_modal.active5 .modal .item:nth-child(5) img:nth-child(1){
+    position: relative;
+    right: 120px;
+    transform: rotate(180deg) scale(1.1);
+    z-index: 10;
+}
+.overlay_modal.active6 .modal .item:nth-child(1),
+.overlay_modal.active6 .modal .item:nth-child(1){
+    display: none;
+}
+.overlay_modal.active6 .modal .item:nth-child(6){
+    display: flex;
+}
+.overlay_modal.active6 .modal .item:nth-child(6) img:nth-child(1){
     position: relative;
     right: 120px;
     transform: rotate(180deg) scale(1.1);
@@ -305,19 +360,77 @@ footer .tab_nav ul li a span{
     transform: rotate(-45deg) scale(1.2);
     right: -50px;
 }
-.overlay_modal .modal .itemdw:nth-child(5) img:nth-child(1){
+.overlay_modal .modal .itemdw:nth-child(9),
+.overlay_modal .modal .itemdw:nth-child(10),
+.overlay_modal .modal .itemdw:nth-child(11),
+.overlay_modal .modal .itemdw:nth-child(12),
+.overlay_modal .modal .itemdw:nth-child(13){
     display: none;
 }
-.overlay_modal.active2 .modal .itemdw:nth-child(4) img:nth-child(1),
-.overlay_modal.active2 .modal .itemdw:nth-child(4) img:nth-child(2){
+
+.overlay_modal.active2 .modal .itemdw:nth-child(8),
+.overlay_modal.active2 .modal .itemdw:nth-child(8){
     display: none;
 }
-.overlay_modal.active2 .modal .itemdw:nth-child(5) img:nth-child(1){
+.overlay_modal.active2 .modal .itemdw:nth-child(9){
+    display: flex;
+}
+.overlay_modal.active2 .modal .itemdw:nth-child(9) img:nth-child(1){ 
     width: calc(70% - 20px);
     transform: scale(1.2) rotate(0deg);
-    position: relative;
     left: 100px;
-    display: block;
+    bottom: 25px;
+}
+.overlay_modal.active3 .modal .itemdw:nth-child(8),
+.overlay_modal.active3 .modal .itemdw:nth-child(8){
+    display: none;
+}
+.overlay_modal.active3 .modal .itemdw:nth-child(10){
+    display: flex;
+}
+.overlay_modal.active3 .modal .itemdw:nth-child(10) img:nth-child(1){ 
+    width: calc(70% - 20px);
+    transform: scale(1.2) rotate(0deg);
+    left: 100px;
+    bottom: 25px;
+}
+.overlay_modal.active4 .modal .itemdw:nth-child(8),
+.overlay_modal.active4 .modal .itemdw:nth-child(8){
+    display: none;
+}
+.overlay_modal.active4 .modal .itemdw:nth-child(11){
+    display: flex;
+}
+.overlay_modal.active4 .modal .itemdw:nth-child(11) img:nth-child(1){ 
+    width: calc(70% - 20px);
+    transform: scale(1.2) rotate(0deg);
+    left: 100px;
+    bottom: 25px;
+}
+.overlay_modal.active5 .modal .itemdw:nth-child(8),
+.overlay_modal.active5 .modal .itemdw:nth-child(8){
+    display: none;
+}
+.overlay_modal.active5 .modal .itemdw:nth-child(12){
+    display: flex;
+}
+.overlay_modal.active5 .modal .itemdw:nth-child(12) img:nth-child(1){ 
+    width: calc(70% - 20px);
+    transform: scale(1.2) rotate(0deg);
+    left: 100px;
+    bottom: 25px;
+}
+.overlay_modal.active6 .modal .itemdw:nth-child(8),
+.overlay_modal.active6 .modal .itemdw:nth-child(8){
+    display: none;
+}
+.overlay_modal.active6 .modal .itemdw:nth-child(13){
+    display: flex;
+}
+.overlay_modal.active6 .modal .itemdw:nth-child(13) img:nth-child(1){ 
+    width: calc(70% - 20px);
+    transform: scale(1.2) rotate(0deg);
+    left: 100px;
     bottom: 25px;
 }
 
@@ -360,7 +473,6 @@ footer .tab_nav ul li a span{
 }
 .overlay_modal .modal .tickt_modal .imgT{
     width: 100%;
-    overflow: hidden;
     position: relative;
     margin-top: 3rem;
     height: calc(33% - 10px);
@@ -392,6 +504,11 @@ footer .tab_nav ul li a span{
     display: block;
 }
 
+.overlay_modal.active3 .modal .tickt_modal .imgT h1,
+.overlay_modal.active4 .modal .tickt_modal .imgT h1{
+    text-shadow: none;
+}
+
 .overlay_modal.active2 .modal .tickt_modal .imgT h1{
     position: absolute;
     top: calc(50% - 22px);
@@ -401,6 +518,19 @@ footer .tab_nav ul li a span{
     display: block;
     letter-spacing: 2px;
     text-shadow: none;
+}
+.overlay_modal.active4 .modal .tickt_modal .imgT h1{
+    font-size: 2rem;
+}
+.overlay_modal.active5 .modal .tickt_modal .imgT h1{
+    position: absolute;
+    top: calc(50% - 22px);
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 20px #9900ff;
 }
 
 /*end change texttest styles*/
@@ -515,6 +645,7 @@ footer .tab_nav ul li a span{
 .overlay_modal.active6 .modal .tickt_modal::before{
     background: #0B0100;
 }
+/*ticket_bg*/
 .overlay_modal.active1 .modal .tickt_modal{
     background-color: #dce611;
 }
@@ -522,10 +653,28 @@ footer .tab_nav ul li a span{
     background-color: #ffffff99;
 }
 .overlay_modal.active3 .modal .tickt_modal{
-    background-color: #ffffff99;
+    background: linear-gradient(180deg, #ffffff99 0%, #ede8e820 100%);
     backdrop-filter: blur(5px);
-    border: 1px solid #ddd;
+    border: 1px solid #fff;
 }
+.overlay_modal.active4 .modal .tickt_modal{
+    background: linear-gradient(180deg, #F9C90A99 0%, #ede8e820 100%);
+    backdrop-filter: blur(5px);
+    border: 1px solid #000;
+}
+.overlay_modal.active5 .modal .tickt_modal{
+    background: linear-gradient(180deg, #ffffff20 0%, #ede8e820 100%);
+    backdrop-filter: blur(5px);
+    border: 2px solid #9900ff;
+    color: #fff;
+}
+.overlay_modal.active6 .modal .tickt_modal{
+    background: linear-gradient(180deg, #18181890 0%, #ffffff30 100%);
+    backdrop-filter: blur(5px);
+    border: 2px solid #3B0707;
+    color: #fff;
+}
+/**/
 .overlay_modal.active2 .modal .tickt_modal .btlnks button,
 .overlay_modal.active2 .modal .tickt_modal .btlnks button a{
     background-color: #3B0707;
