@@ -694,6 +694,7 @@ footer .tab_nav ul li a span {
     align-items: center;
     justify-content: center;
     color: #fff;
+    z-index: 60;
     text-decoration: none;
 }
 
