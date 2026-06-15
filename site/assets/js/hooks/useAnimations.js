@@ -204,7 +204,7 @@ export async function useAnimations() {
         })
     })
 
-    overlay.addEventListener('touchend', () => {
+    overlay.addEventListener('click', () => {
         overlay.classList.remove('active1', 'active2', 'active3', 'active4', 'active5', 'active6');
 
         //code para quitar clases de los tickets, vuelve todo a un color y no distintos.
