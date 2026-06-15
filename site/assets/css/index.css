@@ -446,6 +446,7 @@ footer .tab_nav ul li a span {
 
 .overlay_modal.active3 .modal .itemdw:nth-child(10) {
     display: flex;
+    z-index: 40;
 }
 
 .overlay_modal.active3 .modal .itemdw:nth-child(10) img:nth-child(1) {
@@ -860,6 +861,6 @@ footer .tab_nav ul li a span {
     }
     .overlay_modal .modal .tickt_modal .btlnks button,
     .overlay_modal .modal .tickt_modal .btlnks button a {
-        top: calc(20% - 20px);
+        top: calc(40% - 20px);
     }
 }

@@ -7,6 +7,11 @@ export const useHash = async () => {
 
     navlnk.forEach(e => e.classList.remove('active'));
 
+    if(!hash) {
+        hash = "#lista_cupones";
+        window.location.hash = hash;
+    }
+    
     navlnk.forEach(link => {
         if (link.getAttribute("href") === hash) {
             link.classList.add("active");

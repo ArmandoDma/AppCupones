@@ -7,3 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
     useHash()
     useAnimations();
 })
+
+window.addEventListener('load', () => {
+    useAnimations();
+})
