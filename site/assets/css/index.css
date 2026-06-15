@@ -831,3 +831,35 @@ footer .tab_nav ul li a span {
 }
 
 /**/
+
+/*responsive design*/
+@media screen and (max-width: 450px) {
+    main .ticket-list .ticket .desc::after {
+        content: "Ver Detalles";
+        position: absolute;
+        font-size: .625rem;
+        bottom: 5px;
+        font-weight: 500;
+        right: 0;
+    }
+    main .ticket-list .ticket h4{
+        font-size: .875rem;
+    }
+    main .ticket-list .ticket .desc .couinf p{
+        font-size: .75rem;
+    }
+
+    main .ticket-list .ticket .desc .couinf p strong{
+        font-size: .625rem;
+    }
+}
+
+@media screen and (max-height: 852px) {
+    main{
+        height: calc(83vh - 20px);
+    }
+    .overlay_modal .modal .tickt_modal .btlnks button,
+    .overlay_modal .modal .tickt_modal .btlnks button a {
+        top: calc(20% - 20px);
+    }
+}
