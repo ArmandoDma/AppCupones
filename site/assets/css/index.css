@@ -835,6 +835,9 @@ footer .tab_nav ul li a span {
 
 /*responsive design*/
 @media screen and (max-width: 450px) {
+    main{
+        height: calc(80vh - 10px);
+    }
     main .ticket-list .ticket .desc::after {
         content: "Ver Detalles";
         position: absolute;
@@ -861,6 +864,6 @@ footer .tab_nav ul li a span {
     }
     .overlay_modal .modal .tickt_modal .btlnks button,
     .overlay_modal .modal .tickt_modal .btlnks button a {
-        top: calc(40% - 20px);
+        top: calc(45% - 20px);
     }
 }
