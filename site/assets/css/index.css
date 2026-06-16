@@ -434,9 +434,9 @@ footer .tab_nav ul li a span {
 
 .overlay_modal.active2 .modal .itemdw:nth-child(9) img:nth-child(1) {
     width: calc(70% - 20px);
-    transform: scale(1.2) rotate(0deg);
+    transform: scale(1) rotate(0deg);
     left: 100px;
-    bottom: 25px;
+    bottom: -5px;
 }
 
 .overlay_modal.active3 .modal .itemdw:nth-child(8),
@@ -451,9 +451,9 @@ footer .tab_nav ul li a span {
 
 .overlay_modal.active3 .modal .itemdw:nth-child(10) img:nth-child(1) {
     width: calc(60% - 20px);
-    transform: scale(1.2) rotate(10deg);
-    left: -120px;
-    bottom: 0px;
+    transform: scale(.9) rotate(10deg);
+    left: -160px;
+    bottom: -30px;
 }
 
 .overlay_modal.active4 .modal .itemdw:nth-child(8),
@@ -834,9 +834,9 @@ footer .tab_nav ul li a span {
 /**/
 
 /*responsive design*/
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 430px) {
     main{
-        height: calc(80vh - 10px);
+        height: calc(83vh - 10px);
     }
     main .ticket-list .ticket .desc::after {
         content: "Ver Detalles";
@@ -856,11 +856,16 @@ footer .tab_nav ul li a span {
     main .ticket-list .ticket .desc .couinf p strong{
         font-size: .625rem;
     }
+    
+    .overlay_modal .modal .tickt_modal .btlnks button,
+    .overlay_modal .modal .tickt_modal .btlnks button a {
+        top: calc(50% - 30px);
+    }
 }
 
 @media screen and (max-height: 852px) {
     main{
-        height: calc(83vh - 20px);
+        height: calc(82vh - 20px);
     }
     .overlay_modal .modal .tickt_modal .btlnks button,
     .overlay_modal .modal .tickt_modal .btlnks button a {
