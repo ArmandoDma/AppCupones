@@ -5,13 +5,11 @@ html {
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-top: env(safe-area-inset-top);
 }
 
 * {
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -19,9 +17,7 @@ body {
     background-color: #f3f3f3;
     font-family: 'Outfit', sans-serif;
     padding: 0 !important;
-    margin: 0;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-top: env(safe-area-inset-top);
+    margin: 0 !important;
 }
 
 header {
