@@ -869,6 +869,12 @@ footer .tab_nav ul li a span {
         font-size: 2.125rem;
     }
 
+    .overlay_modal.active1 .modal .tickt_modal .imgT h1 {
+        font-size: 2.125rem;
+        width: 70%;
+        margin: auto;
+    }
+
     .overlay_modal.active2 .modal .tickt_modal .imgT img {
         transform: scale(.7);
     }
@@ -885,7 +891,7 @@ footer .tab_nav ul li a span {
 
 @media screen and (max-height: 852px) {
     main {
-        height: calc(78vh - 10px);
+        height: calc(75vh - 10px);
     }
 
     .overlay_modal .modal .tickt_modal .btlnks button,
