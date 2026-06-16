@@ -885,7 +885,7 @@ footer .tab_nav ul li a span {
 
 @media screen and (max-height: 852px) {
     main {
-        height: calc(80vh - 10px);
+        height: calc(78vh - 10px);
     }
 
     .overlay_modal .modal .tickt_modal .btlnks button,
