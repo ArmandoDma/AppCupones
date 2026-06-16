@@ -1,0 +1,126 @@
+
+    :root {
+      --primary: #ff6b00;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, sans-serif;
+    }
+
+    .card {
+      width: 90%;
+      margin: auto;
+      max-width: 420px;
+      background: var(--card);
+      border-radius: 20px;
+      padding: 28px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border);
+    }
+
+    /* ICON */
+    .icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: #fff7ed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon i {
+      font-size: 32px;
+      color: var(--primary);
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 22px;
+      line-height: 1.4;
+    }
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .feature {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 6px;
+      background: #fff;
+    }
+
+    .feature i {
+      font-size: 18px;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .feature span {
+      display: block;
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+
+    /* BADGE */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fff7ed;
+      color: var(--primary);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      border: 1px solid #fed7aa;
+    }
+
+    /* RESPONSIVE */
+
+    @media (min-width: 640px) {
+      .card {
+        max-width: 500px;
+        padding: 36px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .icon {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .card {
+        max-width: 560px;
+      }
+    }

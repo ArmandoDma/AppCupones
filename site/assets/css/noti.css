@@ -104,10 +104,10 @@
 @media (max-height: 852px) {
     .vocho .wheels .w:nth-child(1) {
         left: 40px;
-        bottom: calc(50% + 95px);
+        bottom: calc(50% + 90px);
     }
     .vocho .wheels .w:nth-child(2) {
         right: 45px;
-        bottom: calc(50% + 95px);
+        bottom: calc(50% + 90px);
     }
 }

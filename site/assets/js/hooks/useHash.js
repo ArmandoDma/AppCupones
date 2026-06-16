@@ -28,6 +28,15 @@ export const useHash = async () => {
                 content.innerHTML = "<p>Error cargando noti.html</p>";
             }
             break;
+        case "#buscar":
+            try {
+                const res = await fetch("searcher.html");
+                const html = await res.text();
+                content.innerHTML = html;
+            } catch (error) {
+                content.innerHTML = "<p>Error cargando searcher.html</p>";
+            }
+            break;
 
         default:
             try {
