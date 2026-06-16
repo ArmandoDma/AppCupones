@@ -450,10 +450,10 @@ footer .tab_nav ul li a span {
 }
 
 .overlay_modal.active3 .modal .itemdw:nth-child(10) img:nth-child(1) {
-    width: calc(60% - 20px);
-    transform: scale(.9) rotate(10deg);
-    left: -160px;
-    bottom: -30px;
+    width: calc(50% - 10px);
+    transform: scale(.95) rotate(10deg);
+    left: -170px;
+    bottom: -10px;
 }
 
 .overlay_modal.active4 .modal .itemdw:nth-child(8),
@@ -631,7 +631,7 @@ footer .tab_nav ul li a span {
     display: block;
     letter-spacing: 2px;
     z-index: 60;
-    text-shadow: 0 2px 20px #1b1b1b;
+    text-shadow: 0 0px 10px #df0030;
 }
 
 /*end change texttest styles*/
@@ -835,9 +835,10 @@ footer .tab_nav ul li a span {
 
 /*responsive design*/
 @media screen and (max-width: 430px) {
-    main{
-        height: calc(83vh - 10px);
+    main {
+        height: calc(81vh - 10px);
     }
+
     main .ticket-list .ticket .desc::after {
         content: "Ver Detalles";
         position: absolute;
@@ -846,27 +847,47 @@ footer .tab_nav ul li a span {
         font-weight: 500;
         right: 0;
     }
-    main .ticket-list .ticket h4{
+
+    main .ticket-list .ticket h4 {
         font-size: .875rem;
     }
-    main .ticket-list .ticket .desc .couinf p{
+
+    main .ticket-list .ticket .desc .couinf p {
         font-size: .75rem;
     }
 
-    main .ticket-list .ticket .desc .couinf p strong{
+    main .ticket-list .ticket .desc .couinf p strong {
         font-size: .625rem;
     }
-    
+
     .overlay_modal .modal .tickt_modal .btlnks button,
     .overlay_modal .modal .tickt_modal .btlnks button a {
         top: calc(50% - 30px);
     }
+
+    .overlay_modal .modal .tickt_modal .imgT h1 {
+        font-size: 2.125rem;
+    }
+
+    .overlay_modal.active2 .modal .tickt_modal .imgT img {
+        transform: scale(.7);
+    }
+
+    .overlay_modal.active6 .modal .tickt_modal .imgT img {
+        transform: rotate(90deg) scale(.85);
+    }
+
+    .overlay_modal.active2 .modal .tickt_modal .imgT h1 {
+        font-size: 2.125rem;
+        top: calc(50% - 15px);
+    }
 }
 
 @media screen and (max-height: 852px) {
-    main{
-        height: calc(82vh - 20px);
+    main {
+        height: calc(80vh - 10px);
     }
+
     .overlay_modal .modal .tickt_modal .btlnks button,
     .overlay_modal .modal .tickt_modal .btlnks button a {
         top: calc(45% - 20px);
