@@ -14,7 +14,7 @@ export async function useAnimations() {
     let btnlnk = document.getElementById('btnlnk');
 
     tickets.forEach((e, i) => {
-        e.addEventListener('click', async() => {
+        e.addEventListener('click', async () => {
             overlay.classList.add('active' + `${i + 1}`)
             e.classList.add('active' + `${i + 1}`)
             if (overlay.classList.contains('active1')) {
@@ -22,7 +22,7 @@ export async function useAnimations() {
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
                     let titulo = tkt.titulo.toLowerCase();
-                    texttest.innerText = titulo;                    
+                    texttest.innerText = titulo;
                     const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("vocho")) {
@@ -40,7 +40,7 @@ export async function useAnimations() {
                         `
                         btnlnk.innerHTML =
                             `
-                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero guapo, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
+                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
                         `
                         break;
                     }
@@ -50,7 +50,7 @@ export async function useAnimations() {
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
                     let titulo = tkt.titulo.toLowerCase();
-                    texttest.innerText = titulo;                    
+                    texttest.innerText = titulo;
                     const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("cine")) {
@@ -72,7 +72,7 @@ export async function useAnimations() {
 
                         btnlnk.innerHTML =
                             `
-                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero guapo, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
+                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
                         `
                         break;
                     }
@@ -81,8 +81,8 @@ export async function useAnimations() {
                 texttest.style.fontFamily = 'Tilt Prism'
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
-                    let titulo = tkt.titulo.toLowerCase();  
-                    texttest.innerText = titulo;            
+                    let titulo = tkt.titulo.toLowerCase();
+                    texttest.innerText = titulo;
                     const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("teporochos")) {
@@ -110,7 +110,7 @@ export async function useAnimations() {
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
                     let titulo = tkt.titulo.toLowerCase();
-                    texttest.innerText = titulo;                    
+                    texttest.innerText = titulo;
                     const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("unas")) {
@@ -128,7 +128,7 @@ export async function useAnimations() {
                         `
                         btnlnk.innerHTML =
                             `
-                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero guapo, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
+                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
                         `
                         break;
                     }
@@ -138,7 +138,7 @@ export async function useAnimations() {
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
                     let titulo = tkt.titulo.toLowerCase();
-                    texttest.innerText = titulo;                    
+                    texttest.innerText = titulo;
                     const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("back")) {
@@ -156,7 +156,7 @@ export async function useAnimations() {
                         `
                         btnlnk.innerHTML =
                             `
-                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero guapo, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
+                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
                         `
                         break;
                     }
@@ -166,11 +166,11 @@ export async function useAnimations() {
                 for (const id of Object.keys(res)) {
                     let tkt = res[id];
                     let titulo = tkt.titulo.toLowerCase();
-                    texttest.innerText = titulo;                    
+                    texttest.innerText = titulo;
                     const invitado = await apiUsuarios(tkt.para);
 
                     if (titulo.includes("velada")) {
-                        
+
                         imgBck.style.opacity = 1
                         imgBck.src = tkt.image;
 
@@ -188,7 +188,67 @@ export async function useAnimations() {
                         `
                         btnlnk.innerHTML =
                             `
-                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero guapo, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
+                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
+                        `
+                        break;
+                    }
+                }
+            } else if (overlay.classList.contains('active7')) {
+                texttest.style.fontFamily = 'Knewave'
+                for (const id of Object.keys(res)) {
+                    let tkt = res[id];
+                    let titulo = tkt.titulo.toLowerCase();
+                    texttest.innerText = titulo;
+                    const invitado = await apiUsuarios(tkt.para);
+
+                    if (titulo.includes("wheels")) {
+
+                        imgBck.style.opacity = 1
+                        imgBck.src = tkt.image;
+
+                        tInfo.innerHTML =
+                            `
+                            <div class='dataC'>
+                                <p>Organizador: <br>${tkt.organizador}</p>
+                                <p>Invitada Especial: <br> ${invitado}</p>
+                                <div class='splitData'>
+                                    <p>Lugar:  <br> ${tkt.lugar}</p>
+                                    <p>Vigencia:  <br> ${tkt.fecha_exp}</p>  
+                                </div>
+                                <p>Descripción:  <br> ${tkt.descripcion}</p>  
+                            </div>
+                        `
+                        btnlnk.innerHTML =
+                            `
+                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
+                        `
+                        break;
+                    }
+                }
+            } else if (overlay.classList.contains('active8')){
+                texttest.style.fontFamily = 'Neuton'
+                for (const id of Object.keys(res)) {
+                    let tkt = res[id];
+                    let titulo = tkt.titulo.toLowerCase();
+                    texttest.innerText = titulo;
+                    const invitado = await apiUsuarios(tkt.para);
+
+                    if (titulo.includes("breakfast")) {
+                        tInfo.innerHTML =
+                            `
+                            <div class='dataC'>
+                                <p>Organizador: <br>${tkt.organizador}</p>
+                                <p>Invitada Especial: <br> ${invitado}</p>
+                                <div class='splitData'>
+                                    <p>Lugar:  <br> ${tkt.lugar}</p>
+                                    <p>Vigencia:  <br> ${tkt.fecha_exp}</p>  
+                                </div>
+                                <p>Descripción:  <br> ${tkt.descripcion}</p>  
+                            </div>
+                        `
+                        btnlnk.innerHTML =
+                            `
+                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
                         `
                         break;
                     }
@@ -205,12 +265,13 @@ export async function useAnimations() {
     })
 
     overlay.addEventListener('click', () => {
-        overlay.classList.remove('active1', 'active2', 'active3', 'active4', 'active5', 'active6');
+        overlay.classList.remove('active1', 'active2', 'active3', 'active4', 'active5', 'active6', 'active7', 'active8');
 
         //code para quitar clases de los tickets, vuelve todo a un color y no distintos.
         /*tickets.forEach((t, i) => {
             t.classList.remove(`active${i + 1}`);
         });*/
+
         imgBck.style.opacity = 0;
         imgBck.src = 'https://res.cloudinary.com/dv2jw95kd/image/upload/v1781124096/ticket_msbdal.png';
     })

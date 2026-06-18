@@ -100,6 +100,37 @@ export async function Ticket() {
                 container.appendChild(card);
                 break;
 
+             case tckt.titulo.includes('wheels'):
+                card.classList.add(`${'active7'}`)
+                card.innerHTML =
+                `
+                <div class="img_tick"><img src="${tckt.image}" alt=""></div>
+                <div class="desc">
+                    <h4>${tckt.titulo}</h4>
+                    <div class="couinf">
+                        <p>Expira en: <br> <strong>${tckt.fecha_exp}</strong></p>  
+                    </div>                          
+                </div>
+                `;
+                container.appendChild(card);
+                break;
+
+            
+             case tckt.titulo.includes('Breakfast'):
+                card.classList.add(`${'active8'}`)
+                card.innerHTML =
+                `
+                <div class="img_tick"><img src="${tckt.image}" alt=""></div>
+                <div class="desc">
+                    <h4>${tckt.titulo}</h4>
+                    <div class="couinf">
+                        <p>Expira en: <br> <strong>${tckt.fecha_exp}</strong></p>  
+                    </div>                          
+                </div>
+                `;
+                container.appendChild(card);
+                break;
+
             default:
                 card.innerHTML =
                 `

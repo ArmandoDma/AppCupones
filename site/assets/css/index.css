@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Audiowide&family=Bahiana&family=Lily+Script+One&family=Luckiest+Guy&family=Tilt+Prism&display=swap');
 
 html {
@@ -144,6 +146,21 @@ main .ticket-list .ticket.active6 .img_tick {
     background: linear-gradient(180deg, #260102 0%, #000 100%);
 }
 
+main .ticket-list .ticket.active7 .img_tick {
+    background: linear-gradient(180deg, #000 0%, #CF7105 100%);
+}
+main .ticket-list .ticket.active7 .img_tick img{
+    min-width: 135%;
+    transform: scale(.6);
+    object-fit: cover;
+    vertical-align: top;
+    object-position: center;
+}
+
+main .ticket-list .ticket.active8 .img_tick {
+    background: linear-gradient(180deg, #b09c73 0%, #5e3d18 100%);
+}
+
 /**/
 
 main .ticket-list .ticket .img_tick img {
@@ -174,6 +191,7 @@ main .ticket-list .ticket .desc::after {
 
 main .ticket-list .ticket .desc h4 {
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 main .ticket-list .ticket .desc .couinf p {
@@ -386,6 +404,16 @@ footer .tab_nav ul li a span {
     z-index: 20;
 }
 
+.overlay_modal.active7 .modal .item:nth-child(1),
+.overlay_modal.active7 .modal .item:nth-child(1) {
+    display: none;
+}
+
+.overlay_modal.active8 .modal .item:nth-child(1),
+.overlay_modal.active8 .modal .item:nth-child(1) {
+    display: none;
+}
+
 /**/
 .overlay_modal .modal .itemdw {
     width: 100%;
@@ -421,7 +449,9 @@ footer .tab_nav ul li a span {
 .overlay_modal .modal .itemdw:nth-child(10),
 .overlay_modal .modal .itemdw:nth-child(11),
 .overlay_modal .modal .itemdw:nth-child(12),
-.overlay_modal .modal .itemdw:nth-child(13) {
+.overlay_modal .modal .itemdw:nth-child(13),
+.overlay_modal .modal .itemdw:nth-child(14),
+.overlay_modal .modal .itemdw:nth-child(15) {
     display: none;
 }
 
@@ -509,6 +539,61 @@ footer .tab_nav ul li a span {
     bottom: 25px;
 }
 
+.overlay_modal.active7 .modal .itemdw:nth-child(8),
+.overlay_modal.active7 .modal .itemdw:nth-child(8) {
+    display: none;
+}
+
+.overlay_modal.active7 .modal .itemdw:nth-child(14) {
+    display: flex;
+    z-index: 20;
+}
+
+.overlay_modal.active7 .modal .itemdw:nth-child(14) img:nth-child(1) {
+    width: calc(100% - 55px);
+    transform: scale(1.2) rotate(0deg);
+    left: 10px;
+    bottom: 50px;
+}
+
+.overlay_modal.active8 .modal .itemdw:nth-child(8),
+.overlay_modal.active8 .modal .itemdw:nth-child(8) {
+    display: none;
+}
+
+.overlay_modal.active8 .modal .itemdw:nth-child(15) {
+    display: flex;
+    z-index: 20;
+}
+
+.overlay_modal.active8 .modal .itemdw:nth-child(15) img:nth-child(1) {
+    width: calc(70% - 55px);
+    transform: scale(.8);
+    right: 1000px;
+    top: 0px;
+}
+
+.overlay_modal.active8 .modal .itemdw:nth-child(15) img:nth-child(1) {
+    width: calc(70% - 55px);
+    transform: scale(.8);
+    top: -250px;
+    left: 130px;
+}
+
+.overlay_modal.active8 .modal .itemdw:nth-child(15) img:nth-child(2) {
+    width: calc(70% - 55px);
+    transform: scale(1.2);
+    left: 0;
+    top: -160px;
+}
+
+.overlay_modal.active8 .modal .itemdw:nth-child(15) img:nth-child(3) {
+    width: calc(70% - 55px);
+    transform: scale(.8) rotateY(180deg);
+    left: -120px;
+    bottom: 0px;
+}
+
 /*fin de sección super personzalible de tickets*/
 .overlay_modal .modal .tickt_modal {
     width: 90%;
@@ -592,9 +677,14 @@ footer .tab_nav ul li a span {
     transform: rotate(90deg);
 }
 
+.overlay_modal.active7 .modal .tickt_modal .imgT img {
+    display: block;
+}
+
 .overlay_modal.active3 .modal .tickt_modal .imgT h1,
 .overlay_modal.active4 .modal .tickt_modal .imgT h1,
-.overlay_modal.active6 .modal .tickt_modal .imgT h1 {
+.overlay_modal.active6 .modal .tickt_modal .imgT h1,
+.overlay_modal.active8 .modal .tickt_modal .imgT h1 {
     text-shadow: none;
 }
 
@@ -634,6 +724,33 @@ footer .tab_nav ul li a span {
     letter-spacing: 2px;
     z-index: 60;
     text-shadow: 0 0px 10px #df0030;
+}
+
+.overlay_modal.active7 .modal .tickt_modal .imgT h1 {
+    position: absolute;
+    top: calc(50% - 22px);
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    letter-spacing: 2px;
+    z-index: 60;
+    color: #CF7105;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0 0 10px #000000bd;
+}
+.overlay_modal.active8 .modal .tickt_modal .imgT h1 {
+    position: absolute;
+    top: calc(50% - 22px);
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    z-index: 60;
+    color: #F5DAB1;
 }
 
 /*end change texttest styles*/
@@ -709,7 +826,9 @@ footer .tab_nav ul li a span {
 .overlay_modal.active3,
 .overlay_modal.active4,
 .overlay_modal.active5,
-.overlay_modal.active6 {
+.overlay_modal.active6,
+.overlay_modal.active7,
+.overlay_modal.active8 {
     top: 0;
     opacity: 1;
 }
@@ -736,6 +855,14 @@ footer .tab_nav ul li a span {
 
 .overlay_modal.active6 {
     background: linear-gradient(180deg, #260102 0%, #000 100%);
+}
+
+.overlay_modal.active7 {
+    background: linear-gradient(180deg, #000000 0%, #793C06 100%);
+}
+
+.overlay_modal.active8 {
+    background: linear-gradient(180deg, #EAE1C7 0%, #FFD39D 100%);
 }
 
 .overlay_modal.active1 .modal .tickt_modal::after,
@@ -766,6 +893,16 @@ footer .tab_nav ul li a span {
 .overlay_modal.active6 .modal .tickt_modal::after,
 .overlay_modal.active6 .modal .tickt_modal::before {
     background: #0B0100;
+}
+
+.overlay_modal.active7 .modal .tickt_modal::after,
+.overlay_modal.active7 .modal .tickt_modal::before {
+    background: #462304;
+}
+
+.overlay_modal.active8 .modal .tickt_modal::after,
+.overlay_modal.active8 .modal .tickt_modal::before {
+    background: #F5DAB1;
 }
 
 /*ticket_bg*/
@@ -802,6 +939,20 @@ footer .tab_nav ul li a span {
     color: #fff;
 }
 
+.overlay_modal.active7 .modal .tickt_modal {
+    background: linear-gradient(180deg, #FFDFB330 0%, #FFDFB320 100%);
+    border: 1px solid #CF7105;
+    backdrop-filter: blur(3px);
+    color: #fff;
+}
+
+.overlay_modal.active8 .modal .tickt_modal {
+    background: linear-gradient(180deg, #5C452070 0%, #5C452070 100%);
+    border: 2px solid #FFD39D;
+    backdrop-filter: blur(3px);
+    color: #fff;
+}
+
 /**/
 .overlay_modal.active2 .modal .tickt_modal .btlnks button,
 .overlay_modal.active2 .modal .tickt_modal .btlnks button a {
@@ -831,6 +982,18 @@ footer .tab_nav ul li a span {
 .overlay_modal.active6 .modal .tickt_modal .btlnks button a {
     background-color: #000;
     color: #fff;
+}
+
+.overlay_modal.active7 .modal .tickt_modal .btlnks button,
+.overlay_modal.active7 .modal .tickt_modal .btlnks button a {
+    background-color: #CF7105;
+    color: #000000;
+}
+
+.overlay_modal.active8 .modal .tickt_modal .btlnks button,
+.overlay_modal.active8 .modal .tickt_modal .btlnks button a {
+    background-color: #EAE1C7;
+    color: #5C4520;
 }
 
 /**/
