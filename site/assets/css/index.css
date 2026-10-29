@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Audiowide&family=Bahiana&family=Lily+Script+One&family=Luckiest+Guy&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -161,6 +162,21 @@ main .ticket-list .ticket.active8 .img_tick {
     background: linear-gradient(180deg, #b09c73 0%, #5e3d18 100%);
 }
 
+main .ticket-list .ticket.active9 .img_tick {
+    background: linear-gradient(180deg, #FF6579 0%, #ea23a8 100%);
+}
+
+main .ticket-list .ticket.active10 .img_tick {
+    background: linear-gradient(180deg, #FFD08E 0%, #FF5900 100%);
+}
+
+main .ticket-list .ticket.active10 .img_tick img{
+    min-width: 135%;
+    transform: scale(.6);
+    object-fit: cover;
+    vertical-align: top;
+    object-position: center;
+}
 /**/
 
 main .ticket-list .ticket .img_tick img {
@@ -451,7 +467,9 @@ footer .tab_nav ul li a span {
 .overlay_modal .modal .itemdw:nth-child(12),
 .overlay_modal .modal .itemdw:nth-child(13),
 .overlay_modal .modal .itemdw:nth-child(14),
-.overlay_modal .modal .itemdw:nth-child(15) {
+.overlay_modal .modal .itemdw:nth-child(15),
+.overlay_modal .modal .itemdw:nth-child(16),
+.overlay_modal .modal .itemdw:nth-child(17) {
     display: none;
 }
 
@@ -594,6 +612,65 @@ footer .tab_nav ul li a span {
     bottom: 0px;
 }
 
+.overlay_modal.active9 .modal .item:nth-child(1),
+.overlay_modal.active9 .modal .item:nth-child(1) {
+    display: none;
+}
+
+.overlay_modal.active9 .modal .itemdw:nth-child(8),
+.overlay_modal.active9 .modal .itemdw:nth-child(8) {
+    display: none;
+}
+
+.overlay_modal.active9 .modal .itemdw:nth-child(16) {
+    display: flex;
+    z-index: 20;
+}
+
+.overlay_modal.active9 .modal .itemdw:nth-child(16) img:nth-child(1) {
+    width: calc(70% - 55px);
+    transform: scale(1.5);
+    top: -80px;
+    left: 0;
+}
+
+.overlay_modal.active9 .modal .itemdw:nth-child(16) img:nth-child(2) {
+     width: calc(70% - 55px);
+    transform: scale(.6);
+    left: 0;
+    top: -10px;
+}
+
+.overlay_modal.active10 .modal .item:nth-child(1),
+.overlay_modal.active10 .modal .item:nth-child(1) {
+    display: none;
+}
+
+.overlay_modal.active10 .modal .itemdw:nth-child(8),
+.overlay_modal.active10 .modal .itemdw:nth-child(8) {
+    display: none;
+}
+
+.overlay_modal.active10 .modal .itemdw:nth-child(17) {
+    display: flex;
+    z-index: 20;
+}
+
+.overlay_modal.active10 .modal .itemdw:nth-child(17) img:nth-child(1) {
+    width: calc(70% - 55px);
+    transform: scale(.8);
+    top: -200px;
+    left: 0;
+}
+
+.overlay_modal.active10 .modal .itemdw:nth-child(17) img:nth-child(2) {
+     width: calc(70% - 55px);
+    transform: scale(2);
+    left: -100px;
+    top: -100px;
+}
+
+
 /*fin de sección super personzalible de tickets*/
 .overlay_modal .modal .tickt_modal {
     width: 90%;
@@ -684,7 +761,9 @@ footer .tab_nav ul li a span {
 .overlay_modal.active3 .modal .tickt_modal .imgT h1,
 .overlay_modal.active4 .modal .tickt_modal .imgT h1,
 .overlay_modal.active6 .modal .tickt_modal .imgT h1,
-.overlay_modal.active8 .modal .tickt_modal .imgT h1 {
+.overlay_modal.active8 .modal .tickt_modal .imgT h1,
+.overlay_modal.active9 .modal .tickt_modal .imgT h1,
+.overlay_modal.active10 .modal .tickt_modal .imgT h1 {
     text-shadow: none;
 }
 
@@ -751,6 +830,34 @@ footer .tab_nav ul li a span {
     letter-spacing: 2px;
     z-index: 60;
     color: #F5DAB1;
+}
+
+.overlay_modal.active9 .modal .tickt_modal .imgT h1 {
+    position: absolute;
+    top: calc(50% - 22px);
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    z-index: 60;
+    color: #A2236F;
+}
+
+.overlay_modal.active10 .modal .tickt_modal .imgT h1 {
+    position: absolute;
+    top: calc(50% - 22px);
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    z-index: 60;
+    color: #bf5a1b;
 }
 
 /*end change texttest styles*/
@@ -828,7 +935,9 @@ footer .tab_nav ul li a span {
 .overlay_modal.active5,
 .overlay_modal.active6,
 .overlay_modal.active7,
-.overlay_modal.active8 {
+.overlay_modal.active8,
+.overlay_modal.active9,
+.overlay_modal.active10 {
     top: 0;
     opacity: 1;
 }
@@ -863,6 +972,14 @@ footer .tab_nav ul li a span {
 
 .overlay_modal.active8 {
     background: linear-gradient(180deg, #EAE1C7 0%, #FFD39D 100%);
+}
+
+.overlay_modal.active9 {
+    background: linear-gradient(180deg, #FF6579 0%, #EA23A8 100%);
+}
+
+.overlay_modal.active10 {
+    background: linear-gradient(180deg, #FFD08E 0%, #FF5900 100%);
 }
 
 .overlay_modal.active1 .modal .tickt_modal::after,
@@ -903,6 +1020,16 @@ footer .tab_nav ul li a span {
 .overlay_modal.active8 .modal .tickt_modal::after,
 .overlay_modal.active8 .modal .tickt_modal::before {
     background: #F5DAB1;
+}
+
+.overlay_modal.active9 .modal .tickt_modal::after,
+.overlay_modal.active9 .modal .tickt_modal::before {
+    background: #F33F94;
+}
+
+.overlay_modal.active10 .modal .tickt_modal::after,
+.overlay_modal.active10 .modal .tickt_modal::before {
+    background: #FF812F;
 }
 
 /*ticket_bg*/
@@ -953,6 +1080,20 @@ footer .tab_nav ul li a span {
     color: #fff;
 }
 
+.overlay_modal.active9 .modal .tickt_modal {
+    background: linear-gradient(180deg, #F68BCB50 0%, #F68BCB50 100%);
+    border: 2px solid #FF27D7;
+    backdrop-filter: blur(3px);
+    color: #fff;
+}
+
+.overlay_modal.active10 .modal .tickt_modal {
+    background: linear-gradient(180deg, #FFA60050 0%, #FFA60050 100%);
+    border: 2px solid #FF6827;
+    backdrop-filter: blur(3px);
+    color: #fff;
+}
+
 /**/
 .overlay_modal.active2 .modal .tickt_modal .btlnks button,
 .overlay_modal.active2 .modal .tickt_modal .btlnks button a {
@@ -994,6 +1135,18 @@ footer .tab_nav ul li a span {
 .overlay_modal.active8 .modal .tickt_modal .btlnks button a {
     background-color: #EAE1C7;
     color: #5C4520;
+}
+
+.overlay_modal.active9 .modal .tickt_modal .btlnks button,
+.overlay_modal.active9 .modal .tickt_modal .btlnks button a {
+    background-color: #000;
+    color: #fff;
+}
+
+.overlay_modal.active10 .modal .tickt_modal .btlnks button,
+.overlay_modal.active10 .modal .tickt_modal .btlnks button a {
+    background-color: #882d05;
+    color: #fff;
 }
 
 /**/

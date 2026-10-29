@@ -254,6 +254,65 @@ export async function useAnimations() {
                     }
                 }
             }
+            else if (overlay.classList.contains('active9')){
+                texttest.style.fontFamily = 'New Amsterdam'
+                for (const id of Object.keys(res)) {
+                    let tkt = res[id];
+                    let titulo = tkt.titulo.toLowerCase();
+                    texttest.innerText = titulo;
+                    const invitado = await apiUsuarios(tkt.para);
+
+                    if (titulo.includes("5mil")) {
+                        tInfo.innerHTML =
+                            `
+                            <div class='dataC'>
+                                <p>Organizador: <br>${tkt.organizador}</p>
+                                <p>Invitada Especial: <br> ${invitado}</p>
+                                <div class='splitData'>
+                                    <p>Lugar:  <br> ${tkt.lugar}</p>
+                                    <p>Vigencia:  <br> ${tkt.fecha_exp}</p>  
+                                </div>
+                                <p>Descripción:  <br> ${tkt.descripcion}</p>  
+                            </div>
+                        `
+                        btnlnk.innerHTML =
+                            `
+                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
+                        `
+                        break;
+                    }
+                }
+            }
+            else if (overlay.classList.contains('active10')){
+                texttest.style.fontFamily = 'New Amsterdam'
+                for (const id of Object.keys(res)) {
+                    let tkt = res[id];
+                    let titulo = tkt.titulo.toLowerCase();
+                    texttest.innerText = titulo;
+                    const invitado = await apiUsuarios(tkt.para);
+
+                    if (titulo.includes("x")) {
+                        tInfo.innerHTML =
+                            `
+                            <div class='dataC'>
+                                <p>Organizador: <br>${tkt.organizador}</p>
+                                <p>Invitada Especial: <br> ${invitado}</p>
+                                <div class='splitData'>
+                                    <p>Lugar:  <br> ${tkt.lugar}</p>
+                                    <p>Vigencia:  <br> ${tkt.fecha_exp}</p>  
+                                </div>
+                                <p>Descripción:  <br> ${tkt.descripcion}</p>  
+                            </div>
+                        `
+                        btnlnk.innerHTML =
+                            `
+                            <a href='https://wa.me/${phone}?text=${encodeURIComponent(`Hola mi estimado ingeniero, me gustaria canjear el siguiente cupón: ${tkt.titulo}`)}'>Canjear Cupón</a>        
+                        `
+                        break;
+                    }
+                }
+            }
+
         })
     })
 
@@ -265,7 +324,7 @@ export async function useAnimations() {
     })
 
     overlay.addEventListener('click', () => {
-        overlay.classList.remove('active1', 'active2', 'active3', 'active4', 'active5', 'active6', 'active7', 'active8');
+        overlay.classList.remove('active1', 'active2', 'active3', 'active4', 'active5', 'active6', 'active7', 'active8', 'active9', 'active10');
 
         //code para quitar clases de los tickets, vuelve todo a un color y no distintos.
         /*tickets.forEach((t, i) => {
